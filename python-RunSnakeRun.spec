@@ -10,6 +10,7 @@ Source0:	http://pypi.python.org/packages/source/R/%{module}/%{module}-%{version}
 # Source0-md5:	a11da198f2c7841ae2e3d901b0031773
 URL:		http://www.vrplumber.com/programming/runsnakerun/
 BuildRequires:	python-devel
+BuildRequires:	python-distribute
 BuildRequires:	rpm-pythonprov
 # if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.219
@@ -19,10 +20,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-simple program, it doesn't provide all the bells-and-whistles of a program like KCacheGrind, it's intended to allow for profiling your Python programs, and just your Python programs
+simple program, it doesn't provide all the bells-and-whistles of a
+program like KCacheGrind, it's intended to allow for profiling your
+Python programs, and just your Python programs
 
 %description -l pl.UTF-8
-Prosty program pozwalający zobaczyć wyniki profiliwoania programów w Pythonie.
+Prosty program pozwalający zobaczyć wyniki profiliwoania programów w
+Pythonie.
 
 %prep
 %setup -q -n %{module}-%{version}
@@ -47,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 # %doc AUTHORS CREDITS ChangeLog NEWS README THANKS TODO
-%attr(755,root,root)  %{_bindir}/runsnake
+%attr(755,root,root) %{_bindir}/runsnake
 %dir %{py_sitescriptdir}/runsnakerun
 %{py_sitescriptdir}/runsnakerun/*.py[co]
 %{py_sitescriptdir}/%{module}*.egg-info
