@@ -2,12 +2,12 @@
 Summary:	GUI Viewer for Python profiling runs
 Summary(pl.UTF-8):	Interfejs graficzny do wyników profilowania programów Pythonowych
 Name:		python-%{module}
-Version:	2.0.0b4
+Version:	2.0.0b6
 Release:	1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/R/%{module}/%{module}-%{version}.tar.gz
-# Source0-md5:	20dc6a4b591ac989cd0ec9011446ac9b
+# Source0-md5:	a11da198f2c7841ae2e3d901b0031773
 URL:		http://www.vrplumber.com/programming/runsnakerun/
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
