@@ -3,7 +3,7 @@ Summary:	GUI Viewer for Python profiling runs
 Summary(pl.UTF-8):	Interfejs graficzny do wyników profilowania programów Pythonowych
 Name:		python-%{module}
 Version:	2.0.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/R/%{module}/%{module}-%{version}.tar.gz
@@ -14,7 +14,7 @@ BuildRequires:	python-distribute
 BuildRequires:	rpm-pythonprov
 # if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.219
-#Requires:		python-libs
+Requires:	python-distribute
 Requires:	python-SquareMap
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
