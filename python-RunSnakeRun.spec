@@ -2,12 +2,13 @@
 Summary:	GUI Viewer for Python profiling runs
 Summary(pl.UTF-8):	Interfejs graficzny do wyników profilowania programów Pythonowych
 Name:		python-%{module}
-Version:	2.0.1
-Release:	2
+Version:	2.0.2a1
+Release:	1
 License:	BSD
 Group:		Development/Languages/Python
+#               http://pypi.python.org/packages/source/R/RunSnakeRun/RunSnakeRun-2.0.2a1.tar.gz
 Source0:	http://pypi.python.org/packages/source/R/%{module}/%{module}-%{version}.tar.gz
-# Source0-md5:	e96bae8c922d1e4dc066e99124dfb80b
+# Source0-md5:	d24e9b2d7d827e2212db6eaf08a5ca31
 URL:		http://www.vrplumber.com/programming/runsnakerun/
 BuildRequires:	python-devel
 BuildRequires:	python-distribute
@@ -15,7 +16,7 @@ BuildRequires:	rpm-pythonprov
 # if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-distribute
-Requires:	python-SquareMap
+Requires:	python-SquareMap >= 1.0.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
